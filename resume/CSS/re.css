@@ -1,0 +1,154 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 標題樣式*/
+.header {
+  background-color:#CCCCFF;
+  padding: 5px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* 創建三個相鄰的獵 */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 1200px; 
+}
+/* 清除列後的浮點數*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div.footer {
+  background-color: #007799;
+  padding: 10px;
+  text-align: center;
+}
+
+/* 三列堆疊,不是相鄰 */
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.title{
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.button{
+  background-color: #008CBA;
+  font-size: 30px;
+  padding:10px;
+  border-radius: 50%;/*外框圓潤度*/
+  border: #33FFFF;
+  text-align: center;
+  --webkit-transition-duration:0.4s;
+  transition-duration: 0.4s;
+}
+.button:hover{
+  background-color: white;
+  color: black;
+  border-radius: 20%;/*外框圓潤度*/
+  border: #33FFFF;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+.center {
+  width: 40%;
+  position:absolute;
+  top:50%
+  left:50%;
+  teansfrom:translate(-50%,-50%);
+  pradding:20px;
+background:#333;
+box-sizing:border-box;
+box-shadow:0 20px 50px reba(0,0,0,.5);
+}
+
+h1{
+margin:0;
+padding:0;
+color:#fff;
+text-transform:uppercase;
+letter-spacing:2px;
+font-family: DFKai-sb;
+text-shadow: -1px -1px white, 1px 1px #333
+}
+h3{
+  font-family: DFKai-sb;
+
+}
+
+.skillbox {
+  box-sizing:border-box;
+width:100%;
+margin:20px 0;
+}
+
+.skillbox p{
+color:#fff;
+text-transfrom:uppercase;
+margin:0 0 10px;
+padding:0;
+font-weight:bold;
+letter-spacing:1px;
+}
+
+.skilllbox p:nth-child(2)
+{
+float:right;
+position;relative;
+top:-25px;
+}
+.skill
+{
+background:#262626;
+padding:4px;
+box-sizing:border-box;
+border:1px solid #0fffb7;
+border-radius:2px;}
+
+.skill_level{
+background:#0fffb7;
+
+height:10px;}
+
+
+.c{width: 80%;background-color: #FF88C2; }
+.net{width: 80%;background-color: #FFAA33; }
+.html {width: 80%; background-color:  #FFFF33;}
+.css {width: 70%; background-color: #99FF33;}
+.js {width: 65%; background-color:  #77FFEE;}
+.Python {width: 20%; background-color: #B94FFF;}
+
+h2{
+  font-size: 50px;
+  text-decoration:underline;
+  text-shadow: -1px -1px white, 1px 1px #333
+}
+
+p{
+  font-size: 125%;
+
+  font-family: DFKai-sb;
+
+}
